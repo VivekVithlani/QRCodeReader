@@ -22,17 +22,22 @@
 }
 
 #pragma mark - QRCodeReaderDelegate
+//- (void)getQRCodeData:(id)qRCodeData {
+//    UIAlertView *altView = [[UIAlertView alloc] initWithTitle:@"QR Code" message:qRCodeData delegate:self cancelButtonTitle:@"Close" otherButtonTitles:@"Rescan", nil];
+//    altView.tag = 991;
+//    [altView show];
+//}
 - (void)getQRCodeData:(id)qRCodeData {
-    UIAlertView *altView = [[UIAlertView alloc] initWithTitle:@"QR Code" message:qRCodeData delegate:self cancelButtonTitle:@"Close" otherButtonTitles:@"Rescan", nil];
-    altView.tag = 991;
-    [altView show];
-}
-
-#pragma mark - UIAlertViewDelegate
-- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
-    if (buttonIndex == 1) {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"QR Code" message:qRCodeData preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"Close" style:UIAlertActionStyleDefault handler:nil];
+    [alertController addAction:cancel];
+    
+    UIAlertAction *reScan = [UIAlertAction actionWithTitle:@"Rescan" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [qrCodeView startReading];
-    }
+    }];
+    [alertController addAction:reScan];
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
