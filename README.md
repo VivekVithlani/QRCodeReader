@@ -1,7 +1,8 @@
 QRCodeReader
 ===========
-## Screenshots
-[![ScreenShot](https://raw.githubusercontent.com/VivekVithlani/QRCodeReader/master/ScanQRCode.png)](https://youtu.be/HEnNMDQ58HU)
+## Screenshot
+![image](Screenshot.png)
+[![ScreenShot](https://github.com/VivekVithlani/QRCodeReader/blob/master/Screenshot.png)](https://youtu.be/HEnNMDQ58HU)
 
 ## How to use
 ##### 1. Embeded Binaries
