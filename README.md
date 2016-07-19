@@ -1,7 +1,6 @@
 QRCodeReader
 ===========
 ## Screenshot
-![image](Screenshot.png)
 [![ScreenShot](https://github.com/VivekVithlani/QRCodeReader/blob/master/Screenshot.png)](https://youtu.be/HEnNMDQ58HU)
 
 ## How to use
