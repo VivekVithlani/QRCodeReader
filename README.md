@@ -1,4 +1,8 @@
-V3QRCodeReader
+# V3QRCodeReader
+
+[![Platform](https://github.com/VivekVithlani/QRCodeReader/blob/master/ios.svg)](https://github.com/VivekVithlani/QRCodeReader)
+![Swift](https://github.com/VivekVithlani/QRCodeReader/blob/master/objective_c.svg)
+
 ===========
 ## Description
 
