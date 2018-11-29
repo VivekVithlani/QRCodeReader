@@ -67,3 +67,20 @@ for more details please visit : https://ioshelloworld.blogspot.com/2016/10/ios-1
     [self presentViewController:alertController animated:YES completion:nil];
 }
 ```
+
+## Supported BarCodeType
+##### √ PDF417
+##### √ QRCode
+##### √ UPCECode
+##### √ 39Code
+##### √ Code39Mod43Code
+##### √ EAN13Code
+##### √ EAN8Code
+##### √ Code93Code
+##### √ Code128Code
+##### √ AztecCode
+##### √ Interleaved2of5Code
+##### √ ITF14Code
+##### √ DataMatrixCode
+
+ 
