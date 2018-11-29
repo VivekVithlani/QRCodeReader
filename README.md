@@ -1,5 +1,13 @@
 V3QRCodeReader
 ===========
+## Description
+
+**V3QRCodeReader** is a simple and beautiful wrapper around the camera with
+barcode capturing functionality and a great user experience.
+- [x] Barcode scanning.
+- [x] Tap to focus.
+- [x] No external dependencies.
+
 ## Screenshot
 [![ScreenShot](https://github.com/VivekVithlani/QRCodeReader/blob/master/Screenshot.png)](https://youtu.be/HEnNMDQ58HU)
 
@@ -68,20 +76,21 @@ for more details please visit : https://ioshelloworld.blogspot.com/2016/10/ios-1
     [self presentViewController:alertController animated:YES completion:nil];
 }
 ```
+##### Tap to focus feture added.
 
 ## Supported BarCodeType
-##### √ PDF417
-##### √ QRCode
-##### √ UPCECode
-##### √ 39Code
-##### √ Code39Mod43Code
-##### √ EAN13Code
-##### √ EAN8Code
-##### √ Code93Code
-##### √ Code128Code
-##### √ AztecCode
-##### √ Interleaved2of5Code
-##### √ ITF14Code
-##### √ DataMatrixCode
+- [x] PDF417
+- [x] QRCode
+- [x] UPCECode
+- [x] 39Code
+- [x] Code39Mod43Code
+- [x] EAN13Code
+- [x] EAN8Code
+- [x] Code93Code
+- [x] Code128Code
+- [x] AztecCode
+- [x] Interleaved2of5Code
+- [x] ITF14Code
+- [x] DataMatrixCode
 
  
