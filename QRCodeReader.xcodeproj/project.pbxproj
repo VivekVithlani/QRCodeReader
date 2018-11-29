@@ -13,9 +13,8 @@
 		06F837C01D3671750092CEDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F837BE1D3671750092CEDF /* Main.storyboard */; };
 		06F837C21D3671750092CEDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F837C11D3671750092CEDF /* Assets.xcassets */; };
 		06F837C51D3671750092CEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F837C31D3671750092CEDF /* LaunchScreen.storyboard */; };
-		06F837D51D3673780092CEDF /* QRCodeReaderFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F837D41D3673780092CEDF /* QRCodeReaderFramework.framework */; };
-		06F837D61D3673830092CEDF /* QRCodeReaderFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F837D41D3673780092CEDF /* QRCodeReaderFramework.framework */; };
-		06F837D71D3673830092CEDF /* QRCodeReaderFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06F837D41D3673780092CEDF /* QRCodeReaderFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		445AB3EC21AFFCB20040B04F /* V3QRCodeScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 445AB3EA21AFFCAB0040B04F /* V3QRCodeScanner.framework */; };
+		445AB3ED21AFFCB20040B04F /* V3QRCodeScanner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 445AB3EA21AFFCAB0040B04F /* V3QRCodeScanner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,7 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				06F837D71D3673830092CEDF /* QRCodeReaderFramework.framework in Embed Frameworks */,
+				445AB3ED21AFFCB20040B04F /* V3QRCodeScanner.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,7 +42,7 @@
 		06F837C11D3671750092CEDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06F837C41D3671750092CEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06F837C61D3671750092CEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		06F837D41D3673780092CEDF /* QRCodeReaderFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QRCodeReaderFramework.framework; sourceTree = "<group>"; };
+		445AB3EA21AFFCAB0040B04F /* V3QRCodeScanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = V3QRCodeScanner.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06F837D61D3673830092CEDF /* QRCodeReaderFramework.framework in Frameworks */,
-				06F837D51D3673780092CEDF /* QRCodeReaderFramework.framework in Frameworks */,
+				445AB3EC21AFFCB20040B04F /* V3QRCodeScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +60,7 @@
 		06F837A91D3671740092CEDF = {
 			isa = PBXGroup;
 			children = (
-				06F837D41D3673780092CEDF /* QRCodeReaderFramework.framework */,
+				445AB3EA21AFFCAB0040B04F /* V3QRCodeScanner.framework */,
 				06F837B41D3671750092CEDF /* QRCodeReader */,
 				06F837B31D3671740092CEDF /* Products */,
 			);
@@ -132,6 +130,7 @@
 				TargetAttributes = {
 					06F837B11D3671740092CEDF = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = F4PC9X3XW8;
 					};
 				};
 			};
@@ -285,6 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F4PC9X3XW8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -292,7 +292,7 @@
 				INFOPLIST_FILE = QRCodeReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qrCodeReader.QRCodeReader;
+				PRODUCT_BUNDLE_IDENTIFIER = com.csdemo.QRCodeReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -301,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F4PC9X3XW8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -308,7 +309,7 @@
 				INFOPLIST_FILE = QRCodeReader/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qrCodeReader.QRCodeReader;
+				PRODUCT_BUNDLE_IDENTIFIER = com.csdemo.QRCodeReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -7,12 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <QRCodeReaderFramework/QRCodeReaderFramework.h>
-
-@interface ViewController : UIViewController <QRCodeReaderDelegate> {
-    // QRCodeView ---------------------------------------------------------
-    IBOutlet    QRCodeReader    *qrCodeView;
-    // QRCodeView ---------------------------------------------------------
+@interface ViewController : UIViewController {
 }
 @end
 
