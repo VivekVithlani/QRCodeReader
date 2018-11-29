@@ -13,8 +13,9 @@ https://youtu.be/A7KhnHdOs6A
 https://youtu.be/_iWtz7nWIaM
 
 ##### 5. Camera Permission.
-Key: `Privacy - Camera Usage Description`
-Value : `$(PRODUCT_NAME) camera use`
+##### Key: `Privacy - Camera Usage Description`
+##### Value : `$(PRODUCT_NAME) camera use`
+
 for more details please visit : https://ioshelloworld.blogspot.com/2016/10/ios-10-infoplist-changes-required.html
 
 
